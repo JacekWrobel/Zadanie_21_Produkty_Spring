@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona Główna</title>
+</head>
+<body>
+<h2>NASZE PRODUKTY</h2>
+<a href="/list">Wyświetl wszystkie produkty</a><br/>
+<a href="/list?category=agd">Wyświetl produkty AGD</a><br/>
+<a href="/list?category=spozywcze">Wyświetl produkty spożywcze</a><br/>
+<a href="/list?category=inne">Wyświetl produkty inne</a><br/>
+<br/>
+
+<form action="/add" method="post"/>
+    <h2>Dodaj nowy produkt</h2>
+    <input type="text" placeholder="nazwa" name="name" >
+    <input type="number" placeholder="cena" name="price">
+    <select type="text" name="category">
+        <option selected>rodzaj produktu</option>
+        <option>agd</option>
+        <option>spozywcze</option>
+        <option>inne</option>
+    </select>
+    <input type="submit" value="Dodaj!">
+</form>
+
+</body>
+</html>
